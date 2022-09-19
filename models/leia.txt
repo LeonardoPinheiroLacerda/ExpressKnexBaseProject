@@ -1,0 +1,1 @@
+Delete this file, it's here only to add the folder model on the versioning

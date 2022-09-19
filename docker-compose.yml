@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  db:
+    container_name: db
+    image: postgres:14.2
+    environment:
+      PGUSER: "root" #Variável pré-definir o usuário da ferramenta psql.
+      POSTGRES_USER: "root"
+      POSTGRES_PASSWORD: "usertest"
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data 
